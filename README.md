@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="icon" title="icon" src="public/favicon.svg" />
+    <img alt="icon" title="icon" src="public/favicon.svg" width="13%"  />
 </h1>
 
 <p align="center">
@@ -11,7 +11,7 @@
 <br>
 
 <p align="center">
-  <img alt="Happy" src="src/assets/ship.png" width="100%">
+  <img alt="Happy" src="src/assets/ship.png" width="85%">
 </p>
 
 ## 🚀 Technology
@@ -24,7 +24,7 @@ This project was developed with the following technologies:
 
 ## 💻 Project
 
-SeaJourney is a fictional company that uses UX and UI to create modern websites for their clients 🌊
+Sea Journey is a fictional company that uses UX and UI to create modern websites for their clients 🌊
 
 ## ⛵ Site
 
