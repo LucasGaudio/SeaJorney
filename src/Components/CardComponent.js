@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -66,8 +66,7 @@ export default function CardComponent({
 	marginBottom,
 }) {
 	const classes = useStyles();
-	const theme = useTheme();
-
+	
 	return (
 		<Grid item style={{ marginBottom: marginBottom }}>
 			<Card className={classes.caseCard}>
