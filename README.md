@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="icon" title="icon" src=".public/favicon.svg" />
+    <img alt="icon" title="icon" src="public/favicon.svg" />
 </h1>
 
 <p align="center">
@@ -11,7 +11,7 @@
 <br>
 
 <p align="center">
-  <img alt="Happy" src=".src/assets/ship.png" width="100%">
+  <img alt="Happy" src="src/assets/ship.png" width="100%">
 </p>
 
 ## 🚀 Technology
