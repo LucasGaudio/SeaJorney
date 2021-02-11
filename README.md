@@ -14,6 +14,12 @@
   <img alt="Sea Jorney intro" src="src/assets/git-image.png" width="100%" height="100% >
 </p>
 
+## 💻 Project
+
+https://sea-jorney.lucasgaudio.vercel.app/
+
+Sea Journey is a fictional company that uses UX and UI to create modern websites for their clients 🌊
+
 ## 🚀 Technology
 
 This project was developed with the following technologies:
@@ -21,10 +27,6 @@ This project was developed with the following technologies:
 -   [React](https://reactjs.org)
 -   [Material-UI](https://material-ui.com/)
 -   [Lottie](https://lottiefiles.com/)
-
-## 💻 Project
-
-Sea Journey is a fictional company that uses UX and UI to create modern websites for their clients 🌊
 
 ## ⛵ Site
 
