@@ -13,6 +13,13 @@
 <p align="center">
   <img alt="Sea Jorney intro" src="src/assets/git-image.png" width="100%" height="100% >
 </p>
+                                                                                  
+                                                                                  
+## ⛵ Site
+
+In the link below you will find the complete responsive website.
+
+-   [Sea Jorney](https://sea-jorney.vercel.app/)
 
 ## ⛵ Site
 
