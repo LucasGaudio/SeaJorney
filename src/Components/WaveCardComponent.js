@@ -18,7 +18,10 @@ const useStyles = makeStyles(theme => ({
 		position: "absolute",
 		boxShadow: theme.shadows[10],
 		borderRadius: 15,
-		padding: "9.5em",
+		padding: "8.5em",
+		[theme.breakpoints.down("md")]: {
+			padding: "6em",
+		},
 		[theme.breakpoints.down("sm")]: {
 			paddingTop: "8em",
 			paddingBottom: "8em",
@@ -50,6 +53,7 @@ export default function WaveCardComponent({ title, text, setValue }) {
 	const classes = useStyles();
 	const theme = useTheme();
 	const matchesMD = useMediaQuerry(theme.breakpoints.down("md"));
+	const matchesSM = useMediaQuerry(theme.breakpoints.down("sm"));
 	const matchesXS = useMediaQuerry(theme.breakpoints.down("xs"));
 
 	return (
@@ -62,13 +66,16 @@ export default function WaveCardComponent({ title, text, setValue }) {
 				align="center"
 				style={{
 					height: "20em",
-					marginTop: "12em",
+					marginTop: "3em",
 					marginBottom: "10em",
 				}}
 			>
 				<Card className={classes.textCard}>
 					<CardContent>
-						<Grid item>
+						<Grid
+							item
+							style={{ marginBottom: matchesSM ? 0 : matchesMD ? "3em" : "0.8em" }}
+						>
 							<Typography variant="h2" style={{ marginBottom: "0.8em" }}>
 								{title}
 							</Typography>

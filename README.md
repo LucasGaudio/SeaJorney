@@ -11,7 +11,11 @@
 <br>
 
 <p align="center">
+<<<<<<< Updated upstream
   <img alt="Happy" src="src/assets/ship.png" width="85%">
+=======
+  <img alt="Sea Jorney intro" src="src/assets/notebook-phone.png" width="100%">
+>>>>>>> Stashed changes
 </p>
 
 ## 🚀 Technology
