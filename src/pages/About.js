@@ -75,8 +75,8 @@ const useStyles = makeStyles(theme => ({
 export default function About(props) {
 	const classes = useStyles();
 	const theme = useTheme();
-	const matchesLG = useMediaQuerry(theme.breakpoints.down("lg"));
 	const matchesMD = useMediaQuerry(theme.breakpoints.down("md"));
+	const matchesSM = useMediaQuerry(theme.breakpoints.down("sm"));
 	const matchesXS = useMediaQuerry(theme.breakpoints.down("xs"));
 
 	const sailingBoat = {
@@ -112,16 +112,16 @@ export default function About(props) {
 				direction={matchesMD ? "column" : "row"}
 				justify="center"
 				alignItems="center"
-				style={{ marginBottom: "10em" }}
+				style={{ marginBottom: "10em", marginTop: matchesMD ? 0 : "5em" }}
 			>
 				<Grid item>
 					<Lottie
 						options={sailingBoat}
-						height={matchesXS ? "95%" : "60%"}
-						width={matchesXS ? "95%" : "60%"}
+						height={matchesSM ? 300 : matchesMD ? 500 : 600}
+						width={matchesSM ? 300 : matchesMD ? 500 : 600}
 					/>
 				</Grid>
-				<Grid item style={{ position: "relative", left: matchesLG ? 0 : "-8%" }}>
+				<Grid item>
 					<Grid item container direction="column" alignItems="center">
 						<Grid item container>
 							<Avatar

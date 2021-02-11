@@ -87,10 +87,17 @@ const useStyles = makeStyles(theme => ({
 	},
 	businessBlock: {
 		backgroundColor: theme.palette.common.staleBlue,
-		height: "62em",
-		[theme.breakpoints.down("xs")]: {
-			height: "auto",
+		height: "40em",
+		[theme.breakpoints.down("md")]: {
+			height: "50em",
 			marginBottom: "1em",
+		},
+		[theme.breakpoints.down("sm")]: {
+			height: "70em",
+			marginBottom: "1em",
+		},
+		[theme.breakpoints.up("xl")]: {
+			height: "50em",
 		},
 	},
 	firstBusinessText: {
@@ -109,6 +116,7 @@ const useStyles = makeStyles(theme => ({
 		marginRight: "1em",
 		[theme.breakpoints.down("md")]: {
 			marginRight: 0,
+			maxWidth: "21em",
 		},
 	},
 	processBlock: {
@@ -184,13 +192,17 @@ export default function LandingPage(props) {
 			<Grid
 				item
 				container
-				direction={matchesMD ? "column" : "row"}
+				direction={matchesSM ? "column" : "row"}
 				justify="center"
 				alignItems="center"
 				className={classes.introContainer}
 			>
 				<Grid item>
-					<Lottie options={sailingBoat} />
+					<Lottie
+						options={sailingBoat}
+						height={matchesSM ? 300 : matchesMD ? 500 : 600}
+						width={matchesSM ? 300 : matchesMD ? 500 : 600}
+					/>
 				</Grid>
 				<Grid item>
 					<Grid
@@ -260,7 +272,7 @@ export default function LandingPage(props) {
 			<Grid
 				item
 				container
-				direction={matchesMD ? "column" : "row"}
+				direction={matchesSM ? "column" : "row"}
 				justify="center"
 				alignItems="center"
 				align={matchesMD ? "center" : "undefined"}

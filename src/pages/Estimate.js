@@ -146,7 +146,7 @@ export default function About(props) {
 			direction={matchesSM ? "column" : "row"}
 			justify="center"
 			alignItems={matchesSM ? "center" : undefined}
-			style={{ marginBottom: matchesSM ? "8em" : "15em" }}
+			style={{ marginBottom: matchesSM ? "8em" : "5em" }}
 		>
 			<Grid item className={classes.marginContainer}>
 				<Grid item container direction="column">

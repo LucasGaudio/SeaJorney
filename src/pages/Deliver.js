@@ -29,6 +29,21 @@ const useStyles = makeStyles(theme => ({
 			marginRight: "1.2em",
 		},
 	},
+	firstImage: {
+		height: "45em",
+		[theme.breakpoints.down("lg")]: {
+			height: "40em",
+		},
+		[theme.breakpoints.down("md")]: {
+			height: "30em",
+		},
+		[theme.breakpoints.down("sm")]: {
+			height: "25em",
+		},
+		[theme.breakpoints.down("xs")]: {
+			height: "20em",
+		},
+	},
 	designGrowthText: {
 		fontSize: "6.2rem",
 		lineHeight: 1.1,
@@ -111,21 +126,9 @@ export default function Deliver(props) {
 						justify="center"
 						alignItems="center"
 					>
-						<Hidden only={["sm", "xs"]}>
+						<Hidden only={["sm", "xs", "md"]}>
 							<Grid item>
-								<img
-									src={ship}
-									alt="ship"
-									style={{
-										height: matchesXS
-											? "20em"
-											: matchesSM
-											? "25em"
-											: matchesMD
-											? "40em"
-											: "50em",
-									}}
-								/>
+								<img src={ship} alt="ship" className={classes.firstImage} />
 							</Grid>
 						</Hidden>
 						<Grid item className={classes.marginContainer}>
@@ -145,15 +148,9 @@ export default function Deliver(props) {
 								</Typography>
 							</Grid>
 						</Grid>
-						<Hidden mdUp>
+						<Hidden lgUp>
 							<Grid item>
-								<img
-									src={ship}
-									alt="ship"
-									style={{
-										height: matchesXS ? "20em" : matchesSM ? "25em" : "50em",
-									}}
-								/>
+								<img src={ship} alt="ship" className={classes.firstImage} />
 							</Grid>
 						</Hidden>
 					</Grid>
@@ -241,16 +238,18 @@ export default function Deliver(props) {
 			</Grid>
 
 			{/*----Who is it for Block----*/}
-			<WaveCardComponent
-				title="Who is it for?"
-				text="The framework is suitable for companies at pre-launch, launch or
+			<Grid item style={{ marginTop: "8em" }}>
+				<WaveCardComponent
+					title="Who is it for?"
+					text="The framework is suitable for companies at pre-launch, launch or
 					product-market fit stage. Our cross-functional team of UX, UI,
 					Product and Growth experts acts as the extension of your product
 					team, bringing in-depth product and design expertise to help you
 					discover and fix complex product challenges and ship the best
 					 of your product as soon as possible."
-				setValue={props.setValue}
-			/>
+					setValue={props.setValue}
+				/>
+			</Grid>
 
 			{/*----Reasons Block----*/}
 			<Grid
@@ -340,15 +339,17 @@ export default function Deliver(props) {
 
 			{/*----What’s next Block----*/}
 
-			<WaveCardComponent
-				title="What’s next?"
-				text="You’ll be fully equipped to continue on your own and keep
+			<Grid item style={{ marginTop: "8em" }}>
+				<WaveCardComponent
+					title="What’s next?"
+					text="You’ll be fully equipped to continue on your own and keep
 					optimising and growing your product. If you need our help
 					though, we can dive in even deeper and improve your performance
 					and conversions continuously. We’ve got the right skillset and
 					efficient processes in-house."
-				setValue={props.setValue}
-			/>
+					setValue={props.setValue}
+				/>
+			</Grid>
 		</Grid>
 	);
 }

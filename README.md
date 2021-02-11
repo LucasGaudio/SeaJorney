@@ -11,20 +11,16 @@
 <br>
 
 <p align="center">
-<<<<<<< Updated upstream
-  <img alt="Happy" src="src/assets/ship.png" width="85%">
-=======
   <img alt="Sea Jorney intro" src="src/assets/notebook-phone.png" width="100%">
->>>>>>> Stashed changes
 </p>
 
 ## 🚀 Technology
 
 This project was developed with the following technologies:
 
--  [React](https://reactjs.org)
--  [Material-UI](https://material-ui.com/)
--  [Lottie](https://lottiefiles.com/)
+-   [React](https://reactjs.org)
+-   [Material-UI](https://material-ui.com/)
+-   [Lottie](https://lottiefiles.com/)
 
 ## 💻 Project
 
@@ -34,5 +30,4 @@ Sea Journey is a fictional company that uses UX and UI to create modern websites
 
 In the link below you will find the complete responsive website.
 
--  [Sea Jorney](https://sea-jorney.vercel.app/)
-
+-   [Sea Jorney](https://sea-jorney.vercel.app/)

@@ -13,19 +13,23 @@ const useStyles = makeStyles(theme => ({
 		display: "flex",
 		boxShadow: theme.shadows[10],
 		borderRadius: 15,
-		height: "41.9em",
+		height: "auto",
 		width: "77em",
+		[theme.breakpoints.down("lg")]: {
+			height: "auto",
+			width: "70em",
+		},
 		[theme.breakpoints.down("md")]: {
-			height: "35.6em",
+			// height: "35.6em",
 			maxWidth: "57em",
 		},
 		[theme.breakpoints.down("sm")]: {
-			height: "51.6em",
+			// height: "51.6em",
 			maxWidth: "35em",
 			display: "grid",
 		},
 		[theme.breakpoints.down("xs")]: {
-			height: "36em",
+			// height: "36em",
 			maxWidth: "96vw",
 			borderRadius: 0,
 		},
@@ -53,6 +57,11 @@ const useStyles = makeStyles(theme => ({
 			backgroundColor: theme.palette.info.light,
 		},
 	},
+	image: {
+		[theme.breakpoints.only("md")]: {
+			height: "32.6em",
+		},
+	},
 }));
 
 export default function CardComponent({
@@ -66,7 +75,7 @@ export default function CardComponent({
 	marginBottom,
 }) {
 	const classes = useStyles();
-	
+
 	return (
 		<Grid item style={{ marginBottom: marginBottom }}>
 			<Card className={classes.caseCard}>
@@ -112,7 +121,12 @@ export default function CardComponent({
 					</Grid>
 				</Grid>
 				<Grid item style={{ backgroundColor: bgColor }}>
-					<CardMedia component="img" alt="case image" image={image} />
+					<CardMedia
+						component="img"
+						alt="case image"
+						image={image}
+						className={classes.image}
+					/>
 				</Grid>
 			</Card>
 		</Grid>
