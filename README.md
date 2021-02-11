@@ -11,7 +11,7 @@
 <br>
 
 <p align="center">
-  <img alt="Sea Jorney intro" src="src/assets/notebook-phone.png" width="100%">
+  <img alt="Sea Jorney intro" src="src/assets/git-image.png" width="100%" height="100% >
 </p>
 
 ## 🚀 Technology
