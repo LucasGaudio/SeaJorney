@@ -20,6 +20,7 @@ https://sea-jorney.lucasgaudio.vercel.app/
 
 Sea Journey is a fictional company that uses UX and UI to create modern websites for their clients 🌊
 
+
 ## 🚀 Technology
 
 This project was developed with the following technologies:
