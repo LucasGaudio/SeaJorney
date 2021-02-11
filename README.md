@@ -3,9 +3,9 @@
 </h1>
 
 <p align="center">
+  <a href="#-site">Site</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-technology">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-   <a href="#-site">Site</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
@@ -13,13 +13,13 @@
 <p align="center">
   <img alt="Sea Jorney intro" src="src/assets/git-image.png" width="100%" height="100% >
 </p>
+                                                                                  
+                                                                                  
+## ⛵ Site
 
-## 💻 Project
+In the link below you will find the complete responsive website.
 
-https://sea-jorney.lucasgaudio.vercel.app/
-
-Sea Journey is a fictional company that uses UX and UI to create modern websites for their clients 🌊
-
+-   [Sea Jorney](https://sea-jorney.vercel.app/)
 
 ## 🚀 Technology
 
@@ -29,8 +29,10 @@ This project was developed with the following technologies:
 -   [Material-UI](https://material-ui.com/)
 -   [Lottie](https://lottiefiles.com/)
 
-## ⛵ Site
+## 💻 Project
 
-In the link below you will find the complete responsive website.
+Sea Journey is a fictional company that uses UX and UI to create modern websites for their clients 🌊
 
--   [Sea Jorney](https://sea-jorney.vercel.app/)
+
+
+
