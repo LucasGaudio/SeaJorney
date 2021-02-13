@@ -1,7 +1,3 @@
-<h1 align="center">
-    <img alt="icon" title="icon" src="public/favicon.svg" width="13%"  />
-</h1>
-
 <p align="center">
   <a href="#-site">Site</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-technology">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -11,15 +7,8 @@
 <br>
 
 <p align="center">
-  <img alt="Sea Jorney intro" src="src/assets/git-image.png" width="100%" height="100% >
+  <img alt="Sea Jorney intro" src="src/assets/git-image.png" width="100%" height="100%" >
 </p>
-                                                                                  
-                                                                                  
-## ⛵ Site
-
-In the link below you will find the complete responsive website.
-
--   [Sea Jorney](https://sea-jorney.vercel.app/)
 
 ## ⛵ Site
 
